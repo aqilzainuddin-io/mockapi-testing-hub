@@ -8,6 +8,7 @@ It focuses on testing CRUD operations on the `/api/users` endpoint.
 Manual testing is done in Postman, and automation using JavaScript and Python will be added later.
 
 ## Project Structure
+```text
 mockapi-testing/
 ├── README.md
 ├── docs/
@@ -15,6 +16,7 @@ mockapi-testing/
 ├── test-data/
 ├── postman/
 └── automation/
+```
 
 - `docs/` → Documentation for test plan, scope, and assumptions.
 - `manual-tests/` → Manual API test cases for each HTTP method.
