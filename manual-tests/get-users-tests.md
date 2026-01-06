@@ -175,15 +175,13 @@ The following scenarios are covered:
 ### GET004
 - **Status:** Pass
 - **Actual Status Code:** 404
-- **Actual Response:**
-"Not found"
+- **Actual Response:** "Not found"
 - **Notes:** Return "Not found" response.
 
 ### GET005
 - **Status:** Pass
 - **Actual Status Code:** 200
-- **Actual Response:**
-[]
+- **Actual Response:** []
 - **Notes:** Return "[]" response.
 
 ### GET006
