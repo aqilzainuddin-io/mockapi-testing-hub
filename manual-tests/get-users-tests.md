@@ -249,4 +249,4 @@ The following scenarios are covered:
 ]
 ```
 - **Response Time (responseTimeMs):** 5980 
-- **Notes:** Return in 5980ms||5.98s response.
+- **Notes:** Successfully return response in 5980ms||5.98s response.
