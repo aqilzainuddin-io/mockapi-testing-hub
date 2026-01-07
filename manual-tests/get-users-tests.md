@@ -38,9 +38,7 @@ a valid response structure, status codes, and performance behavior.
 The following scenarios are covered:
 - Successful retrieval of users
 - Response structure validation
-- Empty dataset handling
 - Response time verification
-- Unsupported HTTP method behavior
 
 ## Test Cases
 ```json
