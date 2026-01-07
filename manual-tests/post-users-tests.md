@@ -34,11 +34,9 @@ The goal is to verify that the API correctly creates new user data, handles vali
 ```
 
 ## Test Scope
-- The following scenarios are covered:
+The following scenarios are covered:
 - Successful creation of a user
-- Validation of required fields
-- Duplicate email handling
-- Unsupported HTTP method behavior
+- Sequential POST operations
 - Response time verification
 
 ## Test Cases
@@ -65,7 +63,6 @@ The goal is to verify that the API correctly creates new user data, handles vali
       "title": "Verify newly created user is retrievable",
       "precondition": "A user has been created successfully",
       "steps": [
-        "Send POST request to create a user",
         "Send GET request to /api/users/{id}"
       ],
       "expectedResult": {
@@ -82,7 +79,7 @@ The goal is to verify that the API correctly creates new user data, handles vali
       ],
       "expectedResult": {
         "statusCode": 201,
-        "description": "User is created successfully and notes field is stored correctly"
+        "description": "User is created successfully"
       }
     },
     {
@@ -90,8 +87,7 @@ The goal is to verify that the API correctly creates new user data, handles vali
       "title": "Create multiple users sequentially",
       "precondition": "Users endpoint is available",
       "steps": [
-        "Send POST request to create first user",
-        "Send POST request to create second user",
+        "Send POST request to create a user",
         "Send GET request to /api/users"
       ],
       "expectedResult": {
