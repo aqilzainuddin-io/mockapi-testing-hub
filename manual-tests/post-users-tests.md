@@ -120,6 +120,15 @@ The goal is to verify that the API correctly creates new user data, handles vali
 ### POST001
 - **Status:** Pass
 - **Actual Status Code:** 201
+- **Post Request:**
+```json
+{
+    "name": "Johnney",
+    "email": "HeyJohnney@hotmail.com",
+    "country": "United States",
+    "notes": "Creation of data using http post method."
+}
+```
 - **Actual Response:**
 ```json
 {
@@ -150,6 +159,15 @@ The goal is to verify that the API correctly creates new user data, handles vali
 ### POST003
 - **Status:** Pass
 - **Actual Status Code:** 201
+- **Post Request:**
+```json
+{
+    "name": "Steven J",
+    "email": "StevenJ@hotmail.com",
+    "country": "England",
+    "notes": "Creation of data using http post method. Test for the long notes text. Instead of a sentence, it consist of three sentence."
+}
+```
 - **Actual Response:**
 ```json
 {
@@ -165,23 +183,16 @@ The goal is to verify that the API correctly creates new user data, handles vali
 ### POST004
 - **Status:** Pass
 - **Actual Status Code:** 201, 200
-- **Actual Response:**
+- **Post Request:**
 ```json
-{
-    "name": "Steven J",
-    "email": "StevenJ@hotmail.com",
-    "country": "England",
-    "notes": "Creation of data using http post method. Test for the long notes text. Instead of a sentence, it consist of three sentence.",
-    "id": "2"
-}
 {
     "name": "Kevin",
     "email": "Kevin@hotmail.com",
     "country": "England",
-    "notes": "Creation of data using http post method. This is the second user creation.",
-    "id": "3"
+    "notes": "Creation of data using http post method. This is the second user creation."
 }
 ```
+- **Actual Response:**
 ```json
 [
     {
@@ -212,6 +223,15 @@ The goal is to verify that the API correctly creates new user data, handles vali
 ### POST005
 - **Status:** Pass
 - **Actual Status Code:** 201
+- **Post Request:**
+```json
+{
+    "name": "David",
+    "email": "David@gmail.com",
+    "country": "United States",
+    "notes": "Creation of data using http post method. This is the third user creation. Test on response time"
+}
+```
 - **Actual Response:**
 ```json
 {
