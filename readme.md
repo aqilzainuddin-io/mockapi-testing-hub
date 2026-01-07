@@ -7,6 +7,18 @@ It focuses on testing CRUD operations on the `/api/users` endpoint.
 
 Manual testing is done in Postman, and automation using JavaScript and Python will be added later.
 
+## Testing Coverage
+This project currently focuses on the **happy path (positive flow)** for API testing.  
+
+Due to limitations of the free/public API used:
+- Some features, including **negative testing** and **edge-case scenarios**, are not accessible in the free tier and are therefore not covered in this project.  
+- Full coverage for these scenarios would require a paid subscription or access to a private API version.  
+
+Despite this, the project demonstrates:
+- Sending requests and validating successful responses  
+- Data creation, retrieval, update, and deletion in the happy flow  
+- Integration with Postman collections and environments
+
 ## Project Structure
 ```text
 mockapi-testing/
