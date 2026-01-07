@@ -171,7 +171,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users?id=1",
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
 					"protocol": "https",
 					"host": [
 						"695b09d21d8041d5eeb5c0f2",
@@ -180,13 +180,8 @@
 					],
 					"path": [
 						"api",
-						"users"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "1"
-						}
+						"users",
+						"1"
 					]
 				}
 			},
@@ -223,7 +218,7 @@
 			"response": []
 		},
 		{
-			"name": "POST004",
+			"name": "POST004(1)",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -253,7 +248,7 @@
 			"response": []
 		},
 		{
-			"name": "POST004-GET",
+			"name": "POST004(1)",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -310,7 +305,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"country\": \"United Kingdom\"\r\n}",
+					"raw": "{\r\n    \"email\": \"StevenJobs@hotmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -329,6 +324,205 @@
 						"api",
 						"users",
 						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH002",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Steven Jobs\",\r\n    \"notes\": \"Using this field for test case PATCH002 purposes.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/2",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH003",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/2",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH004",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"notes\": \"Using this field for test case PATCH004 purposes, where it mainly focus on updating notes fields without affecting other fields.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/2",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH005(1)",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\": \"New Zealand\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH005(2)",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"notes\": \"Using this field for test case PATCH005(2) purposes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH005(3)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH006",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"notes\": \"Using this field for test case PATCH006 purposes to measure response time for patch method\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
 					]
 				}
 			},
