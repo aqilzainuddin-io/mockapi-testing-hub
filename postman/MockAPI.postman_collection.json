@@ -110,6 +110,27 @@
 			"response": []
 		},
 		{
+			"name": "GET005",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "GET006",
 			"request": {
 				"method": "GET",
@@ -131,10 +152,157 @@
 			"response": []
 		},
 		{
-			"name": "GET005",
+			"name": "POST001",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Johnney\",\r\n  \"email\": \"HeyJohnney@hotmail.com\",\r\n  \"country\": \"United States\",\r\n  \"notes\": \"Creation of data using http post method.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST002",
 			"request": {
 				"method": "GET",
 				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users?id=1",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST003",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Steven J\",\r\n  \"email\": \"StevenJ@hotmail.com\",\r\n  \"country\": \"England\",\r\n  \"notes\": \"Creation of data using http post method. Test for the long notes text. Instead of a sentence, it consist of three sentence.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST004",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Kevin\",\r\n  \"email\": \"Kevin@hotmail.com\",\r\n  \"country\": \"England\",\r\n  \"notes\": \"Creation of data using http post method. This is the second user creation.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST004-GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST005",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"David\",\r\n  \"email\": \"David@gmail.com\",\r\n  \"country\": \"United States\",\r\n  \"notes\": \"Creation of data using http post method. This is the third user creation. Test on response time\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
 					"protocol": "https",
