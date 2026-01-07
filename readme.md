@@ -25,7 +25,6 @@ mockapi-testing/
 ├── README.md
 ├── docs/
 ├── manual-tests/
-├── test-data/
 ├── postman/
 └── automation/
 ```
