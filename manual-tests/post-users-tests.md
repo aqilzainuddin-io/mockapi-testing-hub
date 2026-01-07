@@ -239,4 +239,4 @@ The following scenarios are covered:
 }
 ```
 - **Response Time (responseTimeMs):** 2060 
-- **Notes:** Created in 2060ms||2.06s.
+- **Notes:** Successfully created in 2060ms||2.06s.
