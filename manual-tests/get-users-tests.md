@@ -11,6 +11,16 @@ a valid response structure, status codes, and performance behavior.
 - **Authentication:** None
 - **Content-Type:** application/json
 
+## Request Schema (Reference)
+```json
+{
+  "name": "string",
+  "email": "string",
+  "country": "string",
+  "notes": "string"
+}
+```
+
 ## Response Schema (Reference)
 ```json
 [
