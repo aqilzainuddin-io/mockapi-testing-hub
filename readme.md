@@ -31,7 +31,6 @@ mockapi-testing/
 
 - `docs/` → Documentation for test plan, scope, and assumptions.
 - `manual-tests/` → Manual API test cases for each HTTP method.
-- `test-data/` → Example JSON payloads for testing.
 - `postman/` → Postman collection & environment.
 - `automation/` → Future automation scripts.
 
