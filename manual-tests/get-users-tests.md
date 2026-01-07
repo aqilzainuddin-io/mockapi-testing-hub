@@ -120,6 +120,7 @@ The following scenarios are covered:
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
+```json
 [
     {
         "name": "Bryant Bode",
@@ -150,12 +151,14 @@ The following scenarios are covered:
         "id": "4"
     }
 ]
+```
 - **Notes:** Return all existing data.
 
 ### GET002
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
+```json
 [
     {
         "name": "Bryant Bode",
@@ -165,12 +168,14 @@ The following scenarios are covered:
         "id": "1"
     }
 ]
+```
 - **Notes:** Match and followed the schema.
 
 ### GET003
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
+```json
 [
     {
         "name": "Lance Nienow-Considine",
@@ -180,6 +185,7 @@ The following scenarios are covered:
         "id": "2"
     }
 ]
+```
 - **Notes:** Return one specific by user, where the id is 2.
 
 ### GET004
@@ -198,6 +204,7 @@ The following scenarios are covered:
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
+```json
 [
     {
         "name": "Gerard Bins",
@@ -242,5 +249,6 @@ The following scenarios are covered:
         "id": "6"
     }
 ]
+```
 - **Response Time (responseTimeMs):** 5980 
 - **Notes:** Return in 5980ms||5.98s response.
