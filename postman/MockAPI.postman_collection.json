@@ -673,6 +673,114 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "DEL001(1)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL001(2)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL003(1)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/4",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL003(2)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
