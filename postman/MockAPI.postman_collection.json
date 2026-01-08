@@ -527,6 +527,152 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "PUT001",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Luke\",\r\n    \"email\": \"Luke@gmail.com\",\r\n    \"country\": \"New Zealand\",\r\n    \"notes\": \"User data is fully replaced for test case PUT001.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/3",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT002(1)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ryan\",\r\n    \"email\": \"Ryan@hotmail.com\",\r\n    \"country\": \"New Zealand\",\r\n    \"notes\": \"User data is fully replaced for test case PUT002(1).\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/2",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT002(2)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ryan Ronald\",\r\n    \"email\": \"RyanRonald@gmail.com\",\r\n    \"country\": \"United Kingdom\",\r\n    \"notes\": \"User data is fully replaced for test case PUT002(2).\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/2",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT002(3)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/2",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT003",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Arthur\",\r\n    \"email\": \"Arthur@gmail.com\",\r\n    \"country\": \"United State\",\r\n    \"notes\": \"User data fully replaced for test case PUT003.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/4",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
