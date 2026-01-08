@@ -130,7 +130,7 @@ The following scenarios are covered:
 ### PATCH001
 - **Status:** Pass
 - **Actual Status Code:** 200
-- **Pre-Post Request:**
+- **Pre-Patch Request:**
 ```json
 {
     "name": "Steven J",
@@ -140,7 +140,7 @@ The following scenarios are covered:
     "id": "2"
 }
 ```
-- **Post Request:**
+- **Patch Request:**
 ```json
 {
     "email": "StevenJobs@hotmail.com"
@@ -161,7 +161,7 @@ The following scenarios are covered:
 ### PATCH002
 - **Status:** Pass
 - **Actual Status Code:** 200
-- **Pre-Post Request:**
+- **Pre-Patch Request:**
 ```json
 {
     "name": "Steven J",
@@ -171,7 +171,7 @@ The following scenarios are covered:
     "id": "2"
 }
 ```
-- **Post Request:**
+- **Patch Request:**
 ```json
 {
     "name": "Steven Jobs",
@@ -208,7 +208,7 @@ The following scenarios are covered:
 ### PATCH004
 - **Status:** Pass
 - **Actual Status Code:** 200
-- **Pre-Post Request:**
+- **Pre-Patch Request:**
 ```json
 {
     "name": "Steven Jobs",
@@ -218,7 +218,7 @@ The following scenarios are covered:
     "id": "2"
 }
 ```
-- **Post Request:**
+- **Patch Request:**
 ```json
 {
     "notes": "Using this field for test case PATCH004 purposes, where it mainly focus on updating notes fields without affecting other fields."
@@ -239,7 +239,7 @@ The following scenarios are covered:
 ### PATCH005
 - **Status:** Pass
 - **Actual Status Code:** 200, 200, 200
-- **Pre-Post Request(1):**
+- **Pre-Patch Request(1):**
 ```json
 {
     "name": "Johnney",
@@ -249,7 +249,7 @@ The following scenarios are covered:
     "id": "1"
 }
 ```
-- **Post Request:**
+- **Patch Request:**
 ```json
 {
     "country": "New Zealand"
@@ -266,7 +266,7 @@ The following scenarios are covered:
 }
 ```
 
-- **Pre-Post Request(2):**
+- **Pre-Patch Request(2):**
 ```json
 {
     "name": "Johnney",
@@ -276,7 +276,7 @@ The following scenarios are covered:
     "id": "1"
 }
 ```
-- **Post Request:**
+- **Patch Request:**
 ```json
 {
     "notes": "Using this field for test case PATCH005(2) purposes"
@@ -297,7 +297,7 @@ The following scenarios are covered:
 ### PATCH006
 - **Status:** Pass
 - **Actual Status Code:** 200
-- **Pre-Post Request:**
+- **Pre-Patch Request:**
 ```json
 {
     "name": "Johnney",
@@ -307,7 +307,7 @@ The following scenarios are covered:
     "id": "1"
 }
 ```
-- **Post Request:**
+- **Patch Request:**
 ```json
 {
     "notes": "Using this field for test case PATCH006 purposes to measure response time for patch method"
