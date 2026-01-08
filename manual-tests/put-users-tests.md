@@ -92,7 +92,7 @@ The following scenarios are covered:
 ### PUT001
 - **Status:** Pass
 - **Actual Status Code:** 200
-- **Pre-Post Request:**
+- **Pre-Put Request:**
 ```json
 {
     "name": "Kevin",
@@ -102,7 +102,7 @@ The following scenarios are covered:
     "id": "3"
 }
 ```
-- **Post Request:**
+- **Put Request:**
 ```json
 {
     "name": "Luke",
@@ -126,7 +126,7 @@ The following scenarios are covered:
 ### PUT002
 - **Status:** Pass
 - **Actual Status Code:** 200, 200, 200
-- **Pre-Post Request(1):**
+- **Pre-Put Request(1):**
 ```json
 {
     "name": "Steven Jobs",
@@ -136,7 +136,7 @@ The following scenarios are covered:
     "id": "2"
 }
 ```
-- **Post Request(1):**
+- **Put Request(1):**
 ```json
 {
     "name": "Ryan",
@@ -156,7 +156,7 @@ The following scenarios are covered:
 }
 ```
 
-- **Pre-Post Request(2):**
+- **Pre-Put Request(2):**
 ```json
 {
     "name": "Ryan",
@@ -166,7 +166,7 @@ The following scenarios are covered:
     "id": "2"
 }
 ```
-- **Post Request(2):**
+- **Put Request(2):**
 ```json
 {
     "name": "Ryan Ronald",
@@ -201,7 +201,7 @@ The following scenarios are covered:
 ### PUT003
 - **Status:** Pass
 - **Actual Status Code:** 200
-- **Pre-Post Request:**
+- **Pre-Put Request:**
 ```json
 {
     "name": "David",
@@ -211,7 +211,7 @@ The following scenarios are covered:
     "id": "4"
 }
 ```
-- **Post Request:**
+- **Put Request:**
 ```json
 {
     "name": "Arthur",
