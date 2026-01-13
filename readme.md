@@ -73,3 +73,15 @@ mockapi-testing-hub/
    - JavaScript: `npm install`, then run tests using Jest
    - Python: install `requests` and `pytest`, then run test scripts
 
+
+## Automation Testing (JavaScript: In Progress)
+This project also includes API automation testing using JavaScript.
+
+The automation tests are located in the `/automation` directory and are designed to automate selected happy-path CRUD test cases originally executed manually in Postman.
+
+Tech stack:
+- Node.js
+- Axios
+- Jest
+
+Automation is introduced as a second phase of this project.
