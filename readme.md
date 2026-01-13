@@ -21,12 +21,35 @@ Despite this, the project demonstrates:
 
 ## Project Structure
 ```text
-mockapi-testing/
+mockapi-testing-hub/
 ├── README.md
 ├── docs/
-├── manual-tests/
-├── postman/
-└── automation/
+│   ├── assumptions.md
+│   ├── limitations.md
+│   ├── scope.md
+│   ├── test-plan.md
+│   └── manual-test-cases/
+│       ├── get-users.md
+│       ├── post-users.md
+│       ├── put-users.md
+│       ├── patch-users.md
+│       └── delete-users.md
+│
+├── automation/
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── .env
+│   ├── jest.config.js
+│   ├── README.md
+│   └── src/
+│       ├── config/
+│       │   └── apiClient.js
+│       └── tests/
+│           ├── getUsers.test.js
+│           ├── postUsers.test.js
+│           ├── putUsers.test.js
+│           ├── patchUsers.test.js
+│           └── deleteUsers.test.js
 ```
 
 - `docs/` → Documentation for test plan, scope, and assumptions.
