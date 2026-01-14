@@ -1,0 +1,20 @@
+{
+  "name": "mockapi-automation",
+  "version": "1.0.0",
+  "description": "This directory contains API automation tests written in JavaScript using Node.js, Axios, and Jest.",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3"
+  }
+}
