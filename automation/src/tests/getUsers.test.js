@@ -36,12 +36,26 @@ describe("GET /api/users", () => {
 
     // Assert HTTP status is 200
     expect(response.status).toBe(200);
+
+    // Assert response not null or undefined
+    expect(response.data).toBeDefined();
+    expect(response.data).not.toBeNull();
     // Assert response is an object
     expect(typeof response.data).toBe("object");
+    // Assert the user objec has a "name" property
+    expect(response.data).toHaveProperty("name");
+    // Assert the user object has an "email" property
+    expect(response.data).toHaveProperty("email");
+    // Assert the user object has an "country" property
+    expect(response.data).toHaveProperty("country");
+    // Assert the user object has an "notes" property
+    expect(response.data).toHaveProperty("notes");
     // Assert the user object has an "id" property
     expect(response.data).toHaveProperty("id");
     // Assert the returned user has the correct ID
     expect(response.data.id).toBe(String(userId));
+    // Assert response is not an array
+    expect(Array.isArray(response.data)).toBe(false);
   });
 
 
