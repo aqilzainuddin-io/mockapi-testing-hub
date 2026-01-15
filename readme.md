@@ -63,6 +63,68 @@ mockapi-testing-hub/
 - Node.js + Axios + Jest – for future JS automation
 - Python + Requests + Pytest – for future Python automation
 
+## Initial Data Setup (Required Before Testing)
+Before proceeding with manual or automation testing, a fixed base dataset must be created in MockAPI.
+
+Although the system allows users to create data dynamically, relying on newly created or randomly generated data can lead to inconsistent test results across test runs. Dummy data created at different times may vary in structure, order, or content, making test verification harder and less reliable.
+
+To ensure consistency, repeatability, and clarity during testing, this project uses a predefined set of users as baseline data.
+
+All manual test cases and automation scripts are written and validated against this fixed dataset.
+
+Due to MockAPI free-tier limitations, users must be created one at a time using individual POST requests.
+
+### Endpoint
+```text
+POST /api/users
+```
+
+### Required Base Users
+```json
+{
+  "name": "Mr Adrian Collins",
+  "email": "adrian.collins14@gmail.com",
+  "country": "Malaysia",
+  "notes": "Initial test user created for baseline validation."
+}
+```
+```json
+{
+  "name": "Ms Farah Aisyah",
+  "email": "farah.aisyah89@yahoo.com",
+  "country": "Singapore",
+  "notes": "Used for GET and POST happy path testing."
+}
+```
+```json
+{
+  "name": "Mr Daniel Wong",
+  "email": "daniel.wong22@hotmail.com",
+  "country": "Hong Kong",
+  "notes": "Record included to validate list and detail retrieval."
+}
+```
+```json
+{
+  "name": "Ms Aina Sofea",
+  "email": "aina.sofea.dev@gmail.com",
+  "country": "Indonesia",
+  "notes": "Sample data for update and partial update scenarios."
+}
+```
+### Why Fixed Test Data Is Used
+- Ensures consistent results across multiple test runs
+- Makes expected responses easier to validate
+- Prevents confusion caused by randomly generated or changing dummy data
+- Allows manual and automation test cases to reference known users
+- Improves readability and reliability of test documentation
+
+### After Data Setup
+Once all 4 users are created:
+- Proceed with manual test cases in docs/manual-test-cases/
+- Execute API requests using Postman
+- Continue with manual/automation testing phases
+
 ## How to Use
 1. Manual Tests:
    - Open Postman
