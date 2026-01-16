@@ -141,7 +141,36 @@ Behavior: Response body with empty array []
 - **Actual Status Code:** 200
 - **Actual Response:**
 ```json
-
+[
+    {
+        "name": "Mr Adrian Collins",
+        "email": "adrian.collins14@gmail.com",
+        "country": "Malaysia",
+        "notes": "Sample data.",
+        "id": "1"
+    },
+    {
+        "name": "Ms Farah Aisyah",
+        "email": "farah.aisyah89@yahoo.com",
+        "country": "Singapore",
+        "notes": "Sample data.",
+        "id": "2"
+    },
+    {
+        "name": "Mr Daniel Wong",
+        "email": "daniel.wong22@hotmail.com",
+        "country": "Hong Kong",
+        "notes": "Sample data.",
+        "id": "3"
+    },
+    {
+        "name": "Ms Aina Sofea",
+        "email": "aina.sofea.dev@gmail.com",
+        "country": "Indonesia",
+        "notes": "Sample data.",
+        "id": "4"
+    }
+]
 ```
 - **Notes:** Return all existing data.
 
@@ -150,18 +179,53 @@ Behavior: Response body with empty array []
 - **Actual Status Code:** 200
 - **Actual Response:**
 ```json
-
+[
+    {
+        "name": "Mr Adrian Collins",
+        "email": "adrian.collins14@gmail.com",
+        "country": "Malaysia",
+        "notes": "Sample data.",
+        "id": "1"
+    },
+    {
+        "name": "Ms Farah Aisyah",
+        "email": "farah.aisyah89@yahoo.com",
+        "country": "Singapore",
+        "notes": "Sample data.",
+        "id": "2"
+    },
+    {
+        "name": "Mr Daniel Wong",
+        "email": "daniel.wong22@hotmail.com",
+        "country": "Hong Kong",
+        "notes": "Sample data.",
+        "id": "3"
+    },
+    {
+        "name": "Ms Aina Sofea",
+        "email": "aina.sofea.dev@gmail.com",
+        "country": "Indonesia",
+        "notes": "Sample data.",
+        "id": "4"
+    }
+]
 ```
-- **Notes:** Match and followed the schema.
+- **Notes:** Match and followed the schema/structure.
 
 ### GET003
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
 ```json
-
+{
+    "name": "Mr Adrian Collins",
+    "email": "adrian.collins14@gmail.com",
+    "country": "Malaysia",
+    "notes": "Sample data.",
+    "id": "1"
+}
 ```
-- **Notes:** Return one specific by user, where the id is 2.
+- **Notes:** Return one specific by user, where the id is 1.
 
 ### GET004
 - **Status:** Pass
@@ -172,15 +236,44 @@ Behavior: Response body with empty array []
 ### GET005
 - **Status:** Pass
 - **Actual Status Code:** 200
-- **Actual Response:** []
-- **Notes:** Return "[]" response.
+- **Actual Response:**
+```json
+[
+    {
+        "name": "Mr Adrian Collins",
+        "email": "adrian.collins14@gmail.com",
+        "country": "Malaysia",
+        "notes": "Sample data.",
+        "id": "1"
+    },
+    {
+        "name": "Ms Farah Aisyah",
+        "email": "farah.aisyah89@yahoo.com",
+        "country": "Singapore",
+        "notes": "Sample data.",
+        "id": "2"
+    },
+    {
+        "name": "Mr Daniel Wong",
+        "email": "daniel.wong22@hotmail.com",
+        "country": "Hong Kong",
+        "notes": "Sample data.",
+        "id": "3"
+    },
+    {
+        "name": "Ms Aina Sofea",
+        "email": "aina.sofea.dev@gmail.com",
+        "country": "Indonesia",
+        "notes": "Sample data.",
+        "id": "4"
+    }
+]
+```
+- **Response Time (responseTimeMs):** 242ms
+- **Notes:** Successfully return response in 242ms||0.242s response.
 
 ### GET006
 - **Status:** Pass
 - **Actual Status Code:** 200
-- **Actual Response:**
-```json
-
-```
-- **Response Time (responseTimeMs):** 5980 
-- **Notes:** Successfully return response in 5980ms||5.98s response.
+- **Actual Response:** []
+- **Notes:** Return "[]" response.
