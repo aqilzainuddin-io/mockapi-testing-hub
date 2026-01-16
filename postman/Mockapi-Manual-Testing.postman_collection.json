@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "b1c9750a-d774-4098-9722-c647e0e83769",
+		"name": "Mockapi-Manual-Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47482330",
+		"_collection_link": "https://www.postman.com/aqilzainuddin-io-7563348/workspace/automation-testing/collection/47482330-b1c9750a-d774-4098-9722-c647e0e83769?action=share&source=collection_link&creator=47482330"
+	},
+	"item": [
+		{
+			"name": "GET001 - Retrieve all users successfully",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET002 - Validate response structure",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET003 - Retrieve single user with valid ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET004 - Retrieve single user with invalid ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/999999",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"999999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET005 - Verify API response time is acceptable",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET006 - Retrieve users when no users exist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"695b09d21d8041d5eeb5c0f2",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
