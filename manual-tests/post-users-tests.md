@@ -1,4 +1,4 @@
-# GET /api/users – Manual Test Cases
+# POST /api/users – Manual Test Cases
 
 ## Purpose
 This document contains manual test cases for the **POST /api/users** endpoint.
@@ -40,76 +40,81 @@ The following scenarios are covered:
 - Response time verification
 
 ## Test Cases
-```json
-{
-  "endpoint": "POST /api/users",
-  "testCases": [
-    {
-      "id": "POST001",
-      "title": "Create a new user with valid data",
-      "precondition": "Users endpoint is available",
-      "steps": [
-        "Send POST request to /api/users with valid name, email, country, and notes"
-      ],
-      "expectedResult": {
-        "statusCode": 201,
-        "responseType": "object",
-        "requiredFields": ["id", "name", "email", "country", "notes"],
-        "description": "User is created successfully with a unique ID"
-      }
-    },
-    {
-      "id": "POST002",
-      "title": "Verify newly created user is retrievable",
-      "precondition": "A user has been created successfully",
-      "steps": [
-        "Send GET request to /api/users/{id}"
-      ],
-      "expectedResult": {
-        "statusCode": 200,
-        "description": "Created user data is persisted and retrievable"
-      }
-    },
-    {
-      "id": "POST003",
-      "title": "Create user with long notes text",
-      "precondition": "Users endpoint is available",
-      "steps": [
-        "Send POST request with valid data and a long notes string"
-      ],
-      "expectedResult": {
-        "statusCode": 201,
-        "description": "User is created successfully"
-      }
-    },
-    {
-      "id": "POST004",
-      "title": "Create multiple users sequentially",
-      "precondition": "Users endpoint is available",
-      "steps": [
-        "Send POST request to create a user",
-        "Send GET request to /api/users"
-      ],
-      "expectedResult": {
-        "statusCode": 200,
-        "description": "All created users are returned in the users list"
-      }
-    },
-    {
-      "id": "POST005",
-      "title": "Verify response time for user creation",
-      "precondition": "Users endpoint is available",
-      "steps": [
-        "Send POST request with valid data",
-        "Measure response time"
-      ],
-      "expectedResult": {
-        "statusCode": 201,
-        "responseTimeMs": "< 60000"
-      }
-    }
-  ]
-}
+### POST001 - Create a new user with valid data
+```text
+Precondition:
+Users endpoint is available
+
+Steps:
+1. Send POST request to /api/users with valid name, email, country, and notes
+
+Expected Result:
+Status Code: 201
+Response Type: Object
+Behavior: User is created successfully with a unique ID
+Required Fields: name, email, country, notes and id
+```
+
+### POST002 - Verify newly created user is retrievable
+```text
+Precondition:
+A user has been created successfully
+
+Steps:
+1. Send GET request to /api/users/{id}
+
+Expected Result:
+Status Code: 200
+Response Type: Array
+Behavior: Created user data is persisted and retrievable
+Required Fields: name, email, country, notes and id
+```
+
+### POST003 - Create user with long notes text
+```text
+Precondition:
+Users endpoint is available
+
+Steps:
+1. Send POST request with valid data and a long notes string
+
+Expected Result:
+Status Code: 201
+Response Type: Object
+Behavior: User is created successfully with a unique ID
+Required Fields: name, email, country, notes and id
+```
+
+### POST004 - Create multiple users sequentially
+```text
+Precondition:
+Users endpoint is available
+
+Steps:
+1. Send POST request to create a user
+2. Send GET request to /api/users
+
+Expected Result:
+Status Code: 200
+Response Type: Object
+Behavior: All created users are returned in the users list
+Required Fields: name, email, country, notes and id
+```
+
+### POST005 - Verify response time for user creation
+```text
+Precondition:
+Users endpoint is available
+
+Steps:
+1. Send POST request with valid data
+2. Measure response time
+
+Expected Result:
+Status Code: 201
+Response Type: Object
+Behavior: Successfully created user < 60,000 ms
+Required Fields: name, email, country, notes and id
 ```
 
 ## Test Execution Results
@@ -118,22 +123,11 @@ The following scenarios are covered:
 - **Actual Status Code:** 201
 - **Post Request:**
 ```json
-{
-    "name": "Johnney",
-    "email": "HeyJohnney@hotmail.com",
-    "country": "United States",
-    "notes": "Creation of data using http post method."
-}
+
 ```
 - **Actual Response:**
 ```json
-{
-    "name": "Johnney",
-    "email": "HeyJohnney@hotmail.com",
-    "country": "United States",
-    "notes": "Creation of data using http post method.",
-    "id": "1"
-}
+
 ```
 - **Notes:** Data created with unique id; response status code (201).
 
@@ -142,13 +136,7 @@ The following scenarios are covered:
 - **Actual Status Code:** 200
 - **Actual Response:**
 ```json
-{
-    "name": "Johnney",
-    "email": "HeyJohnney@hotmail.com",
-    "country": "United States",
-    "notes": "Creation of data using http post method.",
-    "id": "1"
-}
+
 ```
 - **Notes:** Able to retrieved specific id created from POST001 test case.
 
@@ -157,22 +145,11 @@ The following scenarios are covered:
 - **Actual Status Code:** 201
 - **Post Request:**
 ```json
-{
-    "name": "Steven J",
-    "email": "StevenJ@hotmail.com",
-    "country": "England",
-    "notes": "Creation of data using http post method. Test for the long notes text. Instead of a sentence, it consist of three sentence."
-}
+
 ```
 - **Actual Response:**
 ```json
-{
-    "name": "Steven J",
-    "email": "StevenJ@hotmail.com",
-    "country": "England",
-    "notes": "Creation of data using http post method. Test for the long notes text. Instead of a sentence, it consist of three sentence.",
-    "id": "2"
-}
+
 ```
 - **Notes:** Data created with unique id, notes text consist of (3) sentence; response status code (201).
 
@@ -181,38 +158,11 @@ The following scenarios are covered:
 - **Actual Status Code:** 201, 200
 - **Post Request:**
 ```json
-{
-    "name": "Kevin",
-    "email": "Kevin@hotmail.com",
-    "country": "England",
-    "notes": "Creation of data using http post method. This is the second user creation."
-}
+
 ```
 - **Actual Response:**
 ```json
-[
-    {
-        "name": "Johnney",
-        "email": "HeyJohnney@hotmail.com",
-        "country": "United States",
-        "notes": "Creation of data using http post method.",
-        "id": "1"
-    },
-    {
-        "name": "Steven J",
-        "email": "StevenJ@hotmail.com",
-        "country": "England",
-        "notes": "Creation of data using http post method. Test for the long notes text. Instead of a sentence, it consist of three sentence.",
-        "id": "2"
-    },
-    {
-        "name": "Kevin",
-        "email": "Kevin@hotmail.com",
-        "country": "England",
-        "notes": "Creation of data using http post method. This is the second user creation.",
-        "id": "3"
-    }
-]
+
 ```
 - **Notes:** Data creation from POST003 and POST004 successfully, Able to retrieve all created users data.
 
@@ -221,22 +171,11 @@ The following scenarios are covered:
 - **Actual Status Code:** 201
 - **Post Request:**
 ```json
-{
-    "name": "David",
-    "email": "David@gmail.com",
-    "country": "United States",
-    "notes": "Creation of data using http post method. This is the third user creation. Test on response time"
-}
+
 ```
 - **Actual Response:**
 ```json
-{
-    "name": "David",
-    "email": "David@gmail.com",
-    "country": "United States",
-    "notes": "Creation of data using http post method. This is the third user creation. Test on response time",
-    "id": "4"
-}
+
 ```
 - **Response Time (responseTimeMs):** 2060 
 - **Notes:** Successfully created in 2060ms||2.06s.
