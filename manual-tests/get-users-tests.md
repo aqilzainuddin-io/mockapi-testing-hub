@@ -42,78 +42,69 @@ The following scenarios are covered:
 
 ## Test Cases
 ### GET001 - Retrieve all users successfully
+```text
 Precondition:
-```text
 At least one user exists
-```
+
 Expected Result:
-```text
 Status Code: 200
 Response Type: Array
 Required Fields: name, email, country, notes and id
 ```
 
 ### GET002 - Validate response structure
+```text
 Precondition:
-```text
 Users endpoint is available
-```
+
 Steps:
-```text
 1. Send GET request to /api/users
 2. Inspect response body
-```
+
 Expected Result:
-```text
 Status Code: 200
 Response Type: Array
 Required Fields: name, email, country, notes and id
 ```
 
 ### GET003 - Retrieve single user with valid ID
+```text
 Precondition:
-```text
 At least one user exists
-```
+
 Steps:
-```text
 1. Send GET request to /api/users/{id} with a valid ID
-```
+
 Expected Result:
-```text
 Status Code: 200
 Response Type: Object
 Required Fields: name, email, country, notes and id
 ```
 
 ### GET004 - Retrieve single user with invalid ID
+```text
 Precondition:
-```text
 Users endpoint is available
-```
+
 Steps:
-```text
 1. Send GET request to /api/users/999999 (non-existent ID)
-```
+
 Expected Result:
-```text
 Status Code: 404
 Response Type: Object
 Behavior: Returns "Not Found" or empty response
 ```
 
 ### GET005 - Verify API response time is acceptable
+```text
 Precondition:
-```text
 Users endpoint is available and at least one user exists
-```
+
 Steps:
-```text
 1. Send GET request to /api/users
 2. Measure response time
-```
+
 Expected Result:
-```text
 Status Code: 200
 Response Type: Array
 Behavior: Response time < 60,000 ms
@@ -134,7 +125,7 @@ Behavior: Response body with empty array []
 ```
 
 ## Test Execution Results
-### GET001
+### GET001 - Retrieve all users successfully
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
@@ -172,7 +163,7 @@ Behavior: Response body with empty array []
 ```
 - **Notes:** Return all existing data.
 
-### GET002
+### GET002 - Validate response structure
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
@@ -210,7 +201,7 @@ Behavior: Response body with empty array []
 ```
 - **Notes:** Match and followed the schema/structure.
 
-### GET003
+### GET003 - Retrieve single user with valid ID
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
@@ -225,13 +216,13 @@ Behavior: Response body with empty array []
 ```
 - **Notes:** Return one specific by user, where the id is 1.
 
-### GET004
+### GET004 - Retrieve single user with invalid ID
 - **Status:** Pass
 - **Actual Status Code:** 404
 - **Actual Response:** "Not found"
 - **Notes:** Return "Not found" response.
 
-### GET005
+### GET005 - Verify API response time is acceptable
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
@@ -270,7 +261,7 @@ Behavior: Response body with empty array []
 - **Response Time (responseTimeMs):** 242ms
 - **Notes:** Successfully return response in 242ms||0.242s response.
 
-### GET006
+### GET006 - Retrieve users when no users exist
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:** []
