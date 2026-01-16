@@ -8,204 +8,209 @@
 	},
 	"item": [
 		{
-			"name": "GET001 - Retrieve all users successfully",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "GET-method-test-cases",
+			"item": [
+				{
+					"name": "GET001 - Retrieve all users successfully",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+							"protocol": "https",
+							"host": [
+								"695b09d21d8041d5eeb5c0f2",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"api",
+								"users"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
-					"protocol": "https",
-					"host": [
-						"695b09d21d8041d5eeb5c0f2",
-						"mockapi",
-						"io"
-					],
-					"path": [
-						"api",
-						"users"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET002 - Validate response structure",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "GET002 - Validate response structure",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+							"protocol": "https",
+							"host": [
+								"695b09d21d8041d5eeb5c0f2",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"api",
+								"users"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
-					"protocol": "https",
-					"host": [
-						"695b09d21d8041d5eeb5c0f2",
-						"mockapi",
-						"io"
-					],
-					"path": [
-						"api",
-						"users"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET003 - Retrieve single user with valid ID",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "GET003 - Retrieve single user with valid ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
+							"protocol": "https",
+							"host": [
+								"695b09d21d8041d5eeb5c0f2",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/1",
-					"protocol": "https",
-					"host": [
-						"695b09d21d8041d5eeb5c0f2",
-						"mockapi",
-						"io"
-					],
-					"path": [
-						"api",
-						"users",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET004 - Retrieve single user with invalid ID",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "GET004 - Retrieve single user with invalid ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/999999",
+							"protocol": "https",
+							"host": [
+								"695b09d21d8041d5eeb5c0f2",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"api",
+								"users",
+								"999999"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users/999999",
-					"protocol": "https",
-					"host": [
-						"695b09d21d8041d5eeb5c0f2",
-						"mockapi",
-						"io"
-					],
-					"path": [
-						"api",
-						"users",
-						"999999"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET005 - Verify API response time is acceptable",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "GET005 - Verify API response time is acceptable",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+							"protocol": "https",
+							"host": [
+								"695b09d21d8041d5eeb5c0f2",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"api",
+								"users"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
-					"protocol": "https",
-					"host": [
-						"695b09d21d8041d5eeb5c0f2",
-						"mockapi",
-						"io"
-					],
-					"path": [
-						"api",
-						"users"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET006 - Retrieve users when no users exist",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "GET006 - Retrieve users when no users exist",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
+							"protocol": "https",
+							"host": [
+								"695b09d21d8041d5eeb5c0f2",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"api",
+								"users"
+							]
 						}
-					}
-				},
-				"url": {
-					"raw": "https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users",
-					"protocol": "https",
-					"host": [
-						"695b09d21d8041d5eeb5c0f2",
-						"mockapi",
-						"io"
-					],
-					"path": [
-						"api",
-						"users"
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
