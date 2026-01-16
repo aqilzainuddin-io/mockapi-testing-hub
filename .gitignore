@@ -1,2 +1,5 @@
-## Node dependencies
-node_modules
+# Node dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
