@@ -120,16 +120,14 @@ Behavior: Response time < 60,000 ms
 ```
 
 ### GET006 - Retrieve users when no users exist
+```text
 Precondition:
-```text
 All users are deleted
-```
+
 Steps:
-```text
 1. Send GET request to /api/users
-```
+
 Expected Result:
-```text
 Status Code: 200
 Response Type: Array
 Behavior: Response body with empty array []
