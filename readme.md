@@ -128,7 +128,7 @@ Once all 4 users are created:
 ## How to Use
 1. Manual Tests:
    - Open Postman
-   - Import the Postman collection in `postman/MockAPI.postman_collection.json`
+   - Import the Postman collection in `Mockapi-Manual-Testing.postman_collection.json`
    - Run the requests manually following test cases in `manual-tests/`
 
 2. Automation (future):
