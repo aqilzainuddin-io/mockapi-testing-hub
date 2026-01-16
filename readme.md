@@ -76,7 +76,7 @@ Due to MockAPI free-tier limitations, users must be created one at a time using 
 
 ### Endpoint
 ```text
-POST /api/users
+POST https://695b09d21d8041d5eeb5c0f2.mockapi.io/api/users
 ```
 
 ### Required Base Users
@@ -85,7 +85,7 @@ POST /api/users
   "name": "Mr Adrian Collins",
   "email": "adrian.collins14@gmail.com",
   "country": "Malaysia",
-  "notes": "Initial test user created for baseline validation."
+  "notes": "Sample data."
 }
 ```
 ```json
@@ -93,7 +93,7 @@ POST /api/users
   "name": "Ms Farah Aisyah",
   "email": "farah.aisyah89@yahoo.com",
   "country": "Singapore",
-  "notes": "Used for GET and POST happy path testing."
+  "notes": "Sample data."
 }
 ```
 ```json
@@ -101,7 +101,7 @@ POST /api/users
   "name": "Mr Daniel Wong",
   "email": "daniel.wong22@hotmail.com",
   "country": "Hong Kong",
-  "notes": "Record included to validate list and detail retrieval."
+  "notes": "Sample data."
 }
 ```
 ```json
@@ -109,7 +109,7 @@ POST /api/users
   "name": "Ms Aina Sofea",
   "email": "aina.sofea.dev@gmail.com",
   "country": "Indonesia",
-  "notes": "Sample data for update and partial update scenarios."
+  "notes": "Sample data."
 }
 ```
 ### Why Fixed Test Data Is Used
