@@ -118,64 +118,159 @@ Required Fields: name, email, country, notes and id
 ```
 
 ## Test Execution Results
-### POST001
+### POST001 - Create a new user with valid data
 - **Status:** Pass
 - **Actual Status Code:** 201
 - **Post Request:**
 ```json
-
+{
+    "name": "Ms Rinn",
+    "email": "rinn.dev@gmail.com",
+    "country": "Philipines",
+    "notes": "POST001 - Create a new user with valid data."
+}
 ```
 - **Actual Response:**
 ```json
-
+{
+    "name": "Ms Rinn",
+    "email": "rinn.dev@gmail.com",
+    "country": "Philipines",
+    "notes": "POST001 - Create a new user with valid data.",
+    "id": "5"
+}
 ```
 - **Notes:** Data created with unique id; response status code (201).
 
-### POST002
+### POST002 - Verify newly created user is retrievable
 - **Status:** Pass
 - **Actual Status Code:** 200
 - **Actual Response:**
 ```json
-
+{
+    "name": "Ms Rinn",
+    "email": "rinn.dev@gmail.com",
+    "country": "Philipines",
+    "notes": "POST001 - Create a new user with valid data.",
+    "id": "5"
+}
 ```
 - **Notes:** Able to retrieved specific id created from POST001 test case.
 
-### POST003
+### POST003 - Create user with long notes text
 - **Status:** Pass
 - **Actual Status Code:** 201
 - **Post Request:**
 ```json
-
+{
+    "name": "Ms Rinn",
+    "email": "rinn.dev@gmail.com",
+    "country": "Japan",
+    "notes": "POST003 - Create user with long notes text. This test cases focus on verifying on creating user with long notes."
+}
 ```
 - **Actual Response:**
 ```json
-
+{
+    "name": "Ms Rinn",
+    "email": "rinn.dev@gmail.com",
+    "country": "Japan",
+    "notes": "POST003 - Create user with long notes text. This test cases focus on verifying on creating user with long notes.",
+    "id": "6"
+}
 ```
-- **Notes:** Data created with unique id, notes text consist of (3) sentence; response status code (201).
+- **Notes:** Data created with unique id, notes text consist of (2) sentence; response status code (201).
 
-### POST004
+### POST004 - Create multiple users sequentially
 - **Status:** Pass
 - **Actual Status Code:** 201, 200
 - **Post Request:**
 ```json
-
+{
+    "name": "Ms Avieevian",
+    "email": "ms.avieevian@gmail.com",
+    "country": "Japan",
+    "notes": "POST004 - Create multiple users sequentially.",
+    "id": "7"
+}
 ```
 - **Actual Response:**
 ```json
-
+[
+    {
+        "name": "Mr Adrian Collins",
+        "email": "adrian.collins14@gmail.com",
+        "country": "Malaysia",
+        "notes": "Sample data.",
+        "id": "1"
+    },
+    {
+        "name": "Ms Farah Aisyah",
+        "email": "farah.aisyah89@yahoo.com",
+        "country": "Singapore",
+        "notes": "Sample data.",
+        "id": "2"
+    },
+    {
+        "name": "Mr Daniel Wong",
+        "email": "daniel.wong22@hotmail.com",
+        "country": "Hong Kong",
+        "notes": "Sample data.",
+        "id": "3"
+    },
+    {
+        "name": "Ms Aina Sofea",
+        "email": "aina.sofea.dev@gmail.com",
+        "country": "Indonesia",
+        "notes": "Sample data.",
+        "id": "4"
+    },
+    {
+        "name": "Ms Rinn",
+        "email": "rinn.dev@gmail.com",
+        "country": "Philipines",
+        "notes": "POST001 - Create a new user with valid data.",
+        "id": "5"
+    },
+    {
+        "name": "Ms Rinn",
+        "email": "rinn.dev@gmail.com",
+        "country": "Japan",
+        "notes": "POST003 - Create user with long notes text. This test cases focus on verifying on creating user with long notes.",
+        "id": "6"
+    },
+    {
+        "name": "Ms Avieevian",
+        "email": "ms.avieevian@gmail.com",
+        "country": "Japan",
+        "notes": "POST004 - Create multiple users sequentially.",
+        "id": "7"
+    }
+]
 ```
 - **Notes:** Data creation from POST003 and POST004 successfully, Able to retrieve all created users data.
 
-### POST005
+### POST005 - Verify response time for user creation
 - **Status:** Pass
 - **Actual Status Code:** 201
 - **Post Request:**
 ```json
-
+{
+    "name": "Mr Steven Chao",
+    "email": "steven.chao@gmail.com",
+    "country": "China",
+    "notes": "POST005 - Verify response time for user creation."
+}
 ```
 - **Actual Response:**
 ```json
-
+{
+    "name": "Mr Steven Chao",
+    "email": "steven.chao@gmail.com",
+    "country": "China",
+    "notes": "POST005 - Verify response time for user creation.",
+    "id": "8"
+}
 ```
-- **Response Time (responseTimeMs):** 2060 
-- **Notes:** Successfully created in 2060ms||2.06s.
+- **Response Time (responseTimeMs):** 879 
+- **Notes:** Successfully created in 879ms||0.879s.
